@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    background: linear-gradient(135deg, rgb(7, 66, 114), rgb(14, 101, 141));
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: transparent;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    padding-right: 40px;
+    margin-top: 20px;
+}
+
+.navbar .nav-links li {
+    margin-left: 30px;
+    position: relative;
+}
+
+.navbar .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 5px;
+    transition: color 0.3s ease;
+    font-weight: 600;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.logo {
+    width: 250px;
+    height: auto;
+    margin-right: 90px;
+}
+
+.text-content {
+    text-align: left;
+}
+
+.intro {
+    font-size: 2.5em;
+    margin: 0;
+    font-weight:  550;
+}
+
+.description {
+    font-size: 1em;
+    color: #ccc;
+    max-width: 600px;
+    margin: 20px 0;
+}
+
+.textgradient {
+    background: linear-gradient(90deg, #1fd920, #39e67c, #3fe88e, #48ecae, #56f3df);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+
+.navicon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.game-container {
+    text-align: center;
+    background-color: #34495e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 650px;
+    margin: 80px auto 20px; /* Space between nav bar and game */
+}
+
+canvas {
+    border: 2px solid #ecf0f1;
+    background-color: #ecf0f1;
+    width: 600px;
+    height: 300px;
+}
+
+.score {
+    font-size: 20px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.score i {
+    margin-right: 5px;
+    color: #f1c40f;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #27ae60;
+    color: white;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: #219653;
+}
+
+button i {
+    margin-right: 5px;
+}
+
+.pause-message {
+    display: none;
+    font-size: 18px;
+    margin-top: 10px;
+    color: #e74c3c;
+}
